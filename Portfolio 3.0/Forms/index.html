@@ -1,0 +1,68 @@
+<!--TO DO LIST-->
+<!--connect the nav's href's to their pages-->
+<!--COMPLETED 11/7/19 Add the site Logo to the desktop-->
+<!--COMPLETED 11/7/19 Add the site Logo to the mobile site-->
+<!--FIXED BUG!!! Get the menu line back-->
+<!--BUG!!! homePage doesnt load perfectly-->
+<!--FIXED BUG!!! about page's height is only as high as the <p> -->
+<!--BUG!!! mouse pointer css is unresponsive since changing format of html-->
+<!--BUG!!! button's jquery doesnt work since changing the format of html-->
+<!DOCTYPE html>
+  <head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Normalise.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="homePage pageHeight">
+      <nav class="container">
+        <ul>
+          <a><li class="flashMe1" href="#About" id="About">About</li></a>
+          <a><li class="flashMe2" href="#Studies" id="Studies">Studies</li></a>
+          <a><li class="flashMe3" href="#Portfolio" id="Portfolio">Portfolio</li></a>
+          <a><li class="flashMe4" href="#Contact" id="Contact">Contact</li></a>
+        <!--
+          <a href="#About" id="About"><li class="flashMe1" id="AboutLink">About</li></a>
+          <a href="#Studies" id="Studies"><li class="flashMe2">Studies</li></a>
+          <a href="#Portfolio" id="Portfolio"><li class="flashMe3">Portfolio</li></a>
+          <a href="#Contact" id="Contact"><li class="flashMe4">Contact</li></a>
+        -->
+        </ul>
+      </nav>
+      <img class="mainLogo flashMe5"src="../Assets/Logo1.png">
+    </div>
+    <!--About page-->
+    <div class="aboutPage pageHeight">
+      <div class = "container">
+         <p class="container-Left pageBreak">
+            Lost in a desert of unemployment,
+            with only drops of water last
+            filled from the wells of
+            Centerlink’s “Aus study”.
+            John Gehlert the skilled
+            computer science student,
+            trawls through the sand 
+            seeking the refreshing quench
+            of gainful employment. 
+            </p>
+            <p class="container-Right pageBreak">
+            Will our adventurer find
+            what he set out here to find?
+            Or will he abandon the quest
+            and simply set up a linked in
+            profile like everyone else
+            in his class did... 
+            </p>
+          </div>
+    </div>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="jquery.js"></script>
+  </body>
+</html>

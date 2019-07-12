@@ -1,0 +1,105 @@
+/*Global Styles*/
+*{
+    box-sizing: border-box; /* This contains the global content within the total width https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
+}
+.pageHeight{
+    /* This class provides consistent page heights for mobile */
+    background-repeat: no-repeat, repeat;
+    display:block;
+    width: 100%;
+    background-size: cover;
+    background-position: center,center;
+}
+p,h1,h2,h3,h4,h5,h6,li{
+    font-family: 'Lato', sans-serif; /* gives all text elements the same font */
+    Color: rgba(255,255,255,0.9);
+}
+li{
+    /* This group defines the li selector */
+    padding-top: 6%;
+    font-size: 1.3em;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    cursor:pointer;
+}
+/* homePage */
+.container{
+    width:80%; /* this gives the container a screen width of 80% */
+    margin:0 auto; /* this gives the container a screen width of 80% */
+    max-width: 1150px; /* this gives the container a max width of 1150px */
+}
+ul{
+    margin-top:0px;/* This solves the margin overlap at the top of the screen */
+    list-style-type: none;/* This removes the dots from list elements */
+    padding:0 /* this overrides the user agent style sheet aka default padding */  
+}
+.homePage{
+    background-image: url("../Assets/Backgrounds/IMG_8956.jpg");
+    height:900px;
+}
+.mainLogo{
+    /* This class defines the display for the main logo */
+    width:50%;
+    max-width:700px;
+    padding-top:10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* aboutPage */
+.aboutPage{
+    background-image: url("../Assets/Backgrounds/IMG_8904.jpg");
+    height:1000px;
+}
+.aboutPage p{
+    /* This solves the page over lap issue */
+    margin-top:0px;
+    margin-bottom: 0px;
+    font-size: 2em;
+}
+.pageBreak{
+    padding-top:30%;
+}
+/* Media Queries */
+@media (min-width:320px)
+{
+    .mainLogo
+    {
+        width:90%;
+    }
+    .pageBreak{
+        padding-top:10%;
+    }
+}
+@media (min-width:320px)
+{
+    .pageBreak{
+        padding-top:20%;
+    }
+}
+@media (min-width:768px)
+{
+    li{
+        padding-top: 3%;
+    }
+    nav{
+        border-bottom-style: solid;
+        border-bottom-color: #fff;
+        border-bottom-width: 1px;
+    }
+    nav li{
+        display: inline-block;/* desktop browsers and tablets display the nav inline */
+        padding-right: 10%; /* this  gives the list elements 10% room between them */
+    }
+
+}
+@media (min-width:1024px)
+{
+    .mainLogo
+    {
+        padding-top:2%;
+    }
+
+}
